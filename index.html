@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vidya R - Software Engineer & Cloud Architect Portfolio." />
+  <title>Vidya R | Software Engineer Portfolio</title>
+  
+  <!-- Modern Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="app-body">
+
+  <!-- ========================================================= -->
+  <!-- MOBILE TOP BAR                                            -->
+  <!-- ========================================================= -->
+  <header class="mobile-header" id="mobile-header" aria-label="Mobile Navigation Bar">
+    <a href="#hero" class="brand-logo">
+      <span class="logo-symbol">&lt;VR/&gt;</span>
+      <span class="brand-text">Vidya R</span>
+    </a>
+    <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+      <span class="menu-burger-line"></span>
+      <span class="menu-burger-line"></span>
+      <span class="menu-burger-line"></span>
+    </button>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- 3. VERTICAL NAVIGATION BAR (Left Sidebar)                 -->
+  <!-- ========================================================= -->
+  <aside class="sidebar-nav" id="sidebar-nav" aria-label="Main Vertical Navigation">
+    <div class="sidebar-inner">
+      <!-- Brand & Profile Header -->
+      <div class="sidebar-brand">
+        <a href="#hero" class="brand-logo">
+          <div class="brand-avatar-mini">
+            <img src="WhatsApp Image 2026-10-08 at 11.52.32 PM.jpeg" alt="Vidya R Portrait" />
+          </div>
+          <div class="brand-text-group">
+            <span class="brand-name">Vidya R</span>
+            <span class="brand-role">Software Engineer</span>
+            <span class="brand-status"><span class="status-dot"></span> Available for Hire</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="sidebar-menu" aria-label="Sections Menu">
+        <ul class="nav-list" role="list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active" data-section="hero">
+              <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-section="about">
+              <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span class="nav-text">About Me</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-section="skills">
+              <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span class="nav-text">Skills</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#timeline" class="nav-link" data-section="timeline">
+              <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span class="nav-text">Timeline</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-section="projects">
+              <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <span class="nav-text">Projects</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#video-showcase" class="nav-link" data-section="video-showcase">
+              <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+              <span class="nav-text">Intro Video</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link" data-section="testimonials">
+              <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span class="nav-text">Testimonials</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#chat" class="nav-link" data-section="chat">
+              <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              <span class="nav-text">Chat</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-section="contact">
+              <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span class="nav-text">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer: Night Mode Toggle -->
+      <div class="sidebar-footer">
+        <button 
+          id="theme-toggle" 
+          class="theme-toggle-modern" 
+          aria-label="Toggle Dark Mode"
+          type="button">
+          <span class="toggle-mode-icon" id="theme-icon">🌙</span>
+          <span class="toggle-mode-text" id="theme-text">Dark Mode</span>
+          <div class="toggle-switch-pill"><span class="toggle-switch-thumb"></span></div>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Backdrop overlay for mobile menu drawer -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop" tabindex="-1" aria-hidden="true"></div>
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT AREA                                         -->
+  <!-- ========================================================= -->
+  <div class="main-wrapper">
+    <main id="main-content">
+
+      <!-- ======================================================= -->
+      <!-- 1 & 2. HERO SECTION                                     -->
+      <!-- ======================================================= -->
+      <section class="hero-section" id="hero" aria-labelledby="hero-title">
+        <div class="hero-bg-overlay"></div>
+        
+        <div class="container hero-container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-dot"></span> Full-Stack Engineer & Cloud Architect
+            </div>
+
+            <h1 id="hero-title" class="hero-title">
+              Hi, I'm <span class="gradient-text">Vidya R</span>.
+              <br />
+              Building scalable cloud systems & polished web apps.
+            </h1>
+
+            <p class="hero-subtitle">
+              Passionate software engineer specialized in resilient distributed backends, clean frontend architecture, and high-performance cloud solutions.
+            </p>
+
+            <div class="hero-stats-row">
+              <div class="hero-stat-card">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="hero-stat-card">
+                <span class="stat-number">10M+</span>
+                <span class="stat-label">Daily API Requests</span>
+              </div>
+              <div class="hero-stat-card">
+                <span class="stat-number">99.99%</span>
+                <span class="stat-label">System Uptime</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+                Explore Projects <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#video-showcase" class="btn btn-secondary" id="hero-cta-video">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg> Watch Intro Video
+              </a>
+              <a href="#contact" class="btn btn-outline" id="hero-cta-contact">
+                Get In Touch
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-avatar-wrapper">
+              <div class="avatar-glow"></div>
+              <img 
+                src="WhatsApp Image 2026-10-08 at 11.52.32 PM.jpeg" 
+                alt="Vidya R - Software Engineer" 
+                class="hero-avatar-img"
+              />
+              <div class="floating-chip chip-top">
+                <span class="chip-icon">⚡</span> Full-Stack Web
+              </div>
+              <div class="floating-chip chip-bottom">
+                <span class="chip-icon">🛡️</span> Distributed Systems
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+          <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+        </a>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- 4. ABOUT ME SECTION                                     -->
+      <!-- ======================================================= -->
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">About Me</span>
+            <h2 id="about-title" class="section-title">Meet Vidya R — Engineering with passion & precision.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card-profile">
+              <div class="profile-image-container">
+                <img 
+                  src="WhatsApp Image 2026-10-08 at 11.52.32 PM.jpeg" 
+                  alt="Vidya R Profile" 
+                  class="profile-img"
+                />
+              </div>
+              <div class="profile-details-list">
+                <div class="profile-detail-row">
+                  <span class="detail-label">Name:</span>
+                  <span class="detail-value">Vidya R</span>
+                </div>
+                <div class="profile-detail-row">
+                  <span class="detail-label">Location:</span>
+                  <span class="detail-value">San Francisco, CA / Remote</span>
+                </div>
+                <div class="profile-detail-row">
+                  <span class="detail-label">Role:</span>
+                  <span class="detail-value">Senior Software Engineer</span>
+                </div>
+                <div class="profile-detail-row">
+                  <span class="detail-label">Availability:</span>
+                  <span class="detail-value text-success">Open to New Opportunities</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-text-content">
+              <h3 class="about-lead">
+                "I design and build software that combines high-throughput performance with intuitive, polished user experiences."
+              </h3>
+              
+              <p class="about-paragraph">
+                Hi, I'm <strong>Vidya R</strong>! With a strong background in computer science and production software engineering, I specialize in architecting scalable microservices, low-latency APIs, and modern responsive web applications. I believe in clean code, automated testing, and crafting intuitive software that solves real-world challenges.
+              </p>
+
+              <div class="highlights-grid">
+                <div class="highlight-card">
+                  <div class="highlight-icon-box">🚀</div>
+                  <div class="highlight-text">
+                    <h4>Scalable Architecture</h4>
+                    <p>Architected event-driven microservices serving 10M+ daily requests with sub-millisecond response times.</p>
+                  </div>
+                </div>
+
+                <div class="highlight-card">
+                  <div class="highlight-icon-box">⚡</div>
+                  <div class="highlight-text">
+                    <h4>Performance Optimization</h4>
+                    <p>Reduced core web vital latency by 55% across multi-tenant enterprise dashboard applications.</p>
+                  </div>
+                </div>
+
+                <div class="highlight-card">
+                  <div class="highlight-icon-box">🤝</div>
+                  <div class="highlight-text">
+                    <h4>Engineering Leadership</h4>
+                    <p>Mentored agile full-stack teams, established rigorous CI/CD standards, and led architectural reviews.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-actions">
+                <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                <a href="GGGG.pdf" target="_blank" class="btn btn-outline">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Download Resume
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- 5. SKILLS SECTION                                       -->
+      <!-- ======================================================= -->
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Skills & Technologies</span>
+            <h2 id="skills-title" class="section-title">Core Technical Competencies</h2>
+            <p class="section-desc">A snapshot of my proficiency across frontend, backend, cloud infrastructure, and databases.</p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon">💻</div>
+                <div class="category-info">
+                  <h3>Languages</h3>
+                  <span>Core Programming & Scripting</span>
+                </div>
+              </div>
+              <div class="skills-meter-list">
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">TypeScript / JavaScript</span>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent1" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">Python (FastAPI, Django)</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent2" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">Go / Systems Programming</span>
+                    <span class="skill-percentage">82%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent3" style="width: 82%;"></div></div>
+                </div>
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">SQL (PostgreSQL) & Redis</span>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent1" style="width: 88%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frontend & UI Craft -->
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon">🎨</div>
+                <div class="category-info">
+                  <h3>Frontend Engineering</h3>
+                  <span>Client-Side Architecture & UI</span>
+                </div>
+              </div>
+              <div class="skills-meter-list">
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">React & Next.js Ecosystem</span>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent2" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">Modern CSS & Animations</span>
+                    <span class="skill-percentage">92%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent3" style="width: 92%;"></div></div>
+                </div>
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">State Management & Performance</span>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent1" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">Web Accessibility (WCAG / a11y)</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent2" style="width: 90%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cloud, DevOps & Tools -->
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon">☁️</div>
+                <div class="category-info">
+                  <h3>Cloud & DevOps</h3>
+                  <span>Infrastructure, CI/CD & Deployments</span>
+                </div>
+              </div>
+              <div class="skills-meter-list">
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">Docker & Kubernetes</span>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent3" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">AWS, Cloudflare & GCP</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent1" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">CI/CD Pipelines & GitHub Actions</span>
+                    <span class="skill-percentage">92%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent2" style="width: 92%;"></div></div>
+                </div>
+                <div class="skill-meter">
+                  <div class="skill-info">
+                    <span class="skill-name">Linux, Bash & Observability</span>
+                    <span class="skill-percentage">89%</span>
+                  </div>
+                  <div class="progress-track"><div class="progress-bar bar-accent3" style="width: 89%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Frameworks Pills -->
+          <div class="tools-inventory-card">
+            <h4 class="tools-title">Tools, Frameworks & Standards</h4>
+            <div class="tools-tags-cloud">
+              <span class="tool-tag">GraphQL & REST</span>
+              <span class="tool-tag">Jest & Playwright</span>
+              <span class="tool-tag">Tailwind CSS & Sass</span>
+              <span class="tool-tag">Kafka & RabbitMQ</span>
+              <span class="tool-tag">OAuth 2.0 & JWT</span>
+              <span class="tool-tag">Microservices</span>
+              <span class="tool-tag">Prometheus & Grafana</span>
+              <span class="tool-tag">GitOps & Agile</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- 6. INTERACTIVE TIMELINE                                 -->
+      <!-- ======================================================= -->
+      <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Experience & Milestones</span>
+            <h2 id="timeline-title" class="section-title">Career Milestones & Education</h2>
+            <p class="section-desc">A timeline of Vidya's key professional roles, major project launches, and academic achievements.</p>
+          </div>
+
+          <!-- Timeline Filter Controls -->
+          <div class="timeline-filters" role="tablist" aria-label="Filter timeline events">
+            <button class="filter-chip active" data-filter="all" role="tab" aria-selected="true">All Events</button>
+            <button class="filter-chip" data-filter="career" role="tab" aria-selected="false">Career Roles</button>
+            <button class="filter-chip" data-filter="projects" role="tab" aria-selected="false">Major Launches</button>
+            <button class="filter-chip" data-filter="education" role="tab" aria-selected="false">Education</button>
+          </div>
+
+          <!-- Modern Timeline Track -->
+          <div class="timeline-track" id="timeline-track">
+
+            <!-- Item 1: Senior Software Engineer -->
+            <article class="timeline-card" data-category="career">
+              <div class="timeline-bullet bullet-career">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div class="timeline-content-card">
+                <div class="timeline-meta-row">
+                  <span class="timeline-date-badge active-date">2024 - Present</span>
+                  <span class="timeline-cat-label">Leadership & Architecture</span>
+                </div>
+                <h3 class="timeline-role">Senior Software Engineer & Tech Lead</h3>
+                <h4 class="timeline-org">Tech Innovations Corp</h4>
+                <p class="timeline-description">
+                  Leading cloud platform engineering. Designed high-concurrency microservices processing 10M+ daily API requests, implemented automated quality gates, and mentored full-stack developers.
+                </p>
+                <div class="timeline-tags">
+                  <span class="badge-chip">Go</span>
+                  <span class="badge-chip">Kubernetes</span>
+                  <span class="badge-chip">AWS</span>
+                  <span class="badge-chip">Distributed Systems</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 2: Major Release -->
+            <article class="timeline-card" data-category="projects">
+              <div class="timeline-bullet bullet-project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="timeline-content-card">
+                <div class="timeline-meta-row">
+                  <span class="timeline-date-badge">October 2024</span>
+                  <span class="timeline-cat-label">Open-Source Launch</span>
+                </div>
+                <h3 class="timeline-role">Published Real-Time Cloud Telemetry Suite</h3>
+                <h4 class="timeline-org">Global Open-Source Project</h4>
+                <p class="timeline-description">
+                  Created and open-sourced an interactive real-time cluster telemetry dashboard. Scaled to over 5,000+ GitHub stars with active enterprise community adoption.
+                </p>
+                <div class="timeline-tags">
+                  <span class="badge-chip">TypeScript</span>
+                  <span class="badge-chip">WebSockets</span>
+                  <span class="badge-chip">Docker</span>
+                  <span class="badge-chip">GraphQL</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 3: Software Engineer -->
+            <article class="timeline-card" data-category="career">
+              <div class="timeline-bullet bullet-career">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div class="timeline-content-card">
+                <div class="timeline-meta-row">
+                  <span class="timeline-date-badge">2022 - 2024</span>
+                  <span class="timeline-cat-label">Full-Stack Core</span>
+                </div>
+                <h3 class="timeline-role">Software Engineer</h3>
+                <h4 class="timeline-org">Dynamic Systems Ltd</h4>
+                <p class="timeline-description">
+                  Developed responsive web client applications and scalable backend APIs. Optimized SQL queries and distributed Redis caching, reducing median p95 latency by 45%.
+                </p>
+                <div class="timeline-tags">
+                  <span class="badge-chip">React</span>
+                  <span class="badge-chip">Python</span>
+                  <span class="badge-chip">PostgreSQL</span>
+                  <span class="badge-chip">Redis</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 4: Developer Intern -->
+            <article class="timeline-card" data-category="projects">
+              <div class="timeline-bullet bullet-project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div class="timeline-content-card">
+                <div class="timeline-meta-row">
+                  <span class="timeline-date-badge">2021 - 2022</span>
+                  <span class="timeline-cat-label">Apprenticeship</span>
+                </div>
+                <h3 class="timeline-role">Software Engineering Intern</h3>
+                <h4 class="timeline-org">NextGen Labs</h4>
+                <p class="timeline-description">
+                  Constructed internal analytics microservices and automated deployment verification scripts, cutting build pipeline cycle times significantly.
+                </p>
+                <div class="timeline-tags">
+                  <span class="badge-chip">Node.js</span>
+                  <span class="badge-chip">Express</span>
+                  <span class="badge-chip">Jest</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 5: Education -->
+            <article class="timeline-card" data-category="education">
+              <div class="timeline-bullet bullet-education">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div class="timeline-content-card">
+                <div class="timeline-meta-row">
+                  <span class="timeline-date-badge">2018 - 2022</span>
+                  <span class="timeline-cat-label">Degree Conferred</span>
+                </div>
+                <h3 class="timeline-role">B.S. in Computer Science</h3>
+                <h4 class="timeline-org">University School of Engineering</h4>
+                <p class="timeline-description">
+                  Graduated Summa Cum Laude (GPA: 3.92 / 4.0). Academic coursework centered on Distributed Operating Systems, Algorithms, Data Structures, and Computer Networks.
+                </p>
+                <div class="timeline-tags">
+                  <span class="badge-chip">Summa Cum Laude</span>
+                  <span class="badge-chip">Algorithms</span>
+                  <span class="badge-chip">Distributed Systems</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- 7. PROJECTS SECTION WITH CLICKABLE THUMBNAILS           -->
+      <!-- ======================================================= -->
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Portfolio</span>
+            <h2 id="projects-title" class="section-title">Featured Projects & Systems</h2>
+            <p class="section-desc">Click any project card or thumbnail to view comprehensive architectural details, demo, and source code.</p>
+          </div>
+
+          <div class="projects-grid" id="projects-grid">
+
+            <!-- Project 1 -->
+            <article 
+              class="project-card interactive-project"
+              id="proj-telemetry"
+              data-project-id="1"
+              data-title="Cloud Telemetry & Observability Dashboard"
+              data-category="DevOps & Real-Time Monitoring"
+              data-image="project_telemetry_thumb_1791485730431.jpg"
+              data-description="An enterprise DevOps cluster telemetry monitor providing real-time health metrics. Handles live WebSocket streams from over 850 Kubernetes worker nodes with CPU load heatmaps, memory allocations, and packet throughput visualizations."
+              data-tags="TypeScript,React,WebSockets,Go,Docker,Kubernetes"
+              data-demo="https://example.com/demo-telemetry"
+              data-repo="https://github.com/example/telemetry-suite">
+              
+              <div class="project-thumbnail-box" role="button" tabindex="0" aria-label="View details for Cloud Telemetry Dashboard">
+                <img 
+                  src="project_telemetry_thumb_1791485730431.jpg" 
+                  alt="Cloud Telemetry Dashboard preview thumbnail" 
+                  class="project-thumb-img"
+                />
+                <div class="thumbnail-hover-overlay">
+                  <span class="overlay-badge">View Architecture Details <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+                </div>
+                <span class="status-pill status-live">Live System</span>
+              </div>
+
+              <div class="project-card-body">
+                <div class="project-meta-category">DevOps & Observability</div>
+                <h3 class="project-heading">Cloud Telemetry & Observability Dashboard</h3>
+                <p class="project-excerpt">Live cluster telemetry monitor with sub-second WebSocket metrics and distributed node monitoring.</p>
+                <div class="project-tech-tags">
+                  <span class="tech-pill">TypeScript</span>
+                  <span class="tech-pill">React</span>
+                  <span class="tech-pill">Go</span>
+                  <span class="tech-pill">WebSockets</span>
+                </div>
+                <div class="project-footer-actions">
+                  <button class="btn btn-sm btn-primary open-details-btn" type="button">Project Briefing</button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-external">GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article 
+              class="project-card interactive-project"
+              id="proj-cloud"
+              data-project-id="2"
+              data-title="Distributed Cloud Service Mesh Hub"
+              data-category="Distributed Systems & Cloud"
+              data-image="project_cloud_thumb_1791485762749.jpg"
+              data-description="A high-throughput distributed service mesh and caching tier. Implements decentralized Raft consensus, automated multi-region replication, and microsecond data routing across 12 isolated database cores."
+              data-tags="Go,Redis Streams,gRPC,Terraform,AWS,Raft"
+              data-demo="https://example.com/demo-cloud"
+              data-repo="https://github.com/example/cloud-mesh">
+              
+              <div class="project-thumbnail-box" role="button" tabindex="0" aria-label="View details for Distributed Cloud Service Mesh Hub">
+                <img 
+                  src="project_cloud_thumb_1791485762749.jpg" 
+                  alt="Distributed Cloud Service Mesh Hub preview thumbnail" 
+                  class="project-thumb-img"
+                />
+                <div class="thumbnail-hover-overlay">
+                  <span class="overlay-badge">View Architecture Details <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+                </div>
+                <span class="status-pill status-deployed">Production</span>
+              </div>
+
+              <div class="project-card-body">
+                <div class="project-meta-category">Distributed Systems</div>
+                <h3 class="project-heading">Distributed Cloud Service Mesh Hub</h3>
+                <p class="project-excerpt">Decentralized service mesh routing data across multi-region server backbones with Raft consensus.</p>
+                <div class="project-tech-tags">
+                  <span class="tech-pill">Go</span>
+                  <span class="tech-pill">Redis Streams</span>
+                  <span class="tech-pill">gRPC</span>
+                  <span class="tech-pill">AWS</span>
+                </div>
+                <div class="project-footer-actions">
+                  <button class="btn btn-sm btn-primary open-details-btn" type="button">Project Briefing</button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-external">GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article 
+              class="project-card interactive-project"
+              id="proj-arcade"
+              data-project-id="3"
+              data-title="Modern Web Graphics & Physics Engine"
+              data-category="WebGL & Interactive Systems"
+              data-image="project_game_thumb_1791485798031.jpg"
+              data-description="A browser-native 2D canvas and WebGL interactive rendering engine. Features custom collision detection pipelines, dynamic lighting shaders, visual animation timelines, and high-framerate physics execution."
+              data-tags="TypeScript,Canvas 2D,WebGL,Web Audio,Vite"
+              data-demo="https://example.com/demo-arcade"
+              data-repo="https://github.com/example/webgl-engine">
+              
+              <div class="project-thumbnail-box" role="button" tabindex="0" aria-label="View details for Web Graphics Engine">
+                <img 
+                  src="project_game_thumb_1791485798031.jpg" 
+                  alt="Web Graphics & Physics Engine preview thumbnail" 
+                  class="project-thumb-img"
+                />
+                <div class="thumbnail-hover-overlay">
+                  <span class="overlay-badge">View Architecture Details <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+                </div>
+                <span class="status-pill status-live">WebGL 2.0</span>
+              </div>
+
+              <div class="project-card-body">
+                <div class="project-meta-category">Graphics & WebGL</div>
+                <h3 class="project-heading">Modern Web Graphics & Physics Engine</h3>
+                <p class="project-excerpt">Browser-native rendering engine with visual sprite animation editor and physics simulation.</p>
+                <div class="project-tech-tags">
+                  <span class="tech-pill">TypeScript</span>
+                  <span class="tech-pill">WebGL</span>
+                  <span class="tech-pill">Canvas API</span>
+                  <span class="tech-pill">Vite</span>
+                </div>
+                <div class="project-footer-actions">
+                  <button class="btn btn-sm btn-primary open-details-btn" type="button">Project Briefing</button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-external">GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article 
+              class="project-card interactive-project"
+              id="proj-ai"
+              data-project-id="4"
+              data-title="AI Neural Core Orchestration Console"
+              data-category="AI & Machine Learning"
+              data-image="project_ai_thumb_1791485834368.jpg"
+              data-description="Real-time LLM agent orchestration platform. Visualizes dynamic neural inference weights, latency heatmaps, token streaming rates, and vector memory retrieval pipelines in an elegant monitoring interface."
+              data-tags="Python,FastAPI,PyTorch,React,Vector DB,Tailwind"
+              data-demo="https://example.com/demo-ai"
+              data-repo="https://github.com/example/neural-orchestrator">
+              
+              <div class="project-thumbnail-box" role="button" tabindex="0" aria-label="View details for AI Neural Core Console">
+                <img 
+                  src="project_ai_thumb_1791485834368.jpg" 
+                  alt="AI Neural Core Orchestration Console preview thumbnail" 
+                  class="project-thumb-img"
+                />
+                <div class="thumbnail-hover-overlay">
+                  <span class="overlay-badge">View Architecture Details <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>
+                </div>
+                <span class="status-pill status-live">AI Core</span>
+              </div>
+
+              <div class="project-card-body">
+                <div class="project-meta-category">AI & Data Infrastructure</div>
+                <h3 class="project-heading">AI Neural Core Orchestration Console</h3>
+                <p class="project-excerpt">Real-time LLM agent orchestration console with streaming token telemetry and vector search visualizer.</p>
+                <div class="project-tech-tags">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">FastAPI</span>
+                  <span class="tech-pill">PyTorch</span>
+                  <span class="tech-pill">React</span>
+                </div>
+                <div class="project-footer-actions">
+                  <button class="btn btn-sm btn-primary open-details-btn" type="button">Project Briefing</button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-external">GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- 8. SELF INTRODUCTION VIDEO SECTION (WITH LOCAL VIDEO)   -->
+      <!-- ======================================================= -->
+      <section class="section video-section" id="video-showcase" aria-labelledby="video-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Self Introduction Video</span>
+            <h2 id="video-title" class="section-title">Meet Vidya R — Video Introduction</h2>
+            <p class="section-desc">Watch my introduction video discussing my engineering background, technical expertise, and passion for building scalable software.</p>
+          </div>
+
+          <div class="video-showcase-container">
+            <!-- Modern Video Player Card with local video file -->
+            <div class="modern-video-card">
+              <div class="video-responsive-frame">
+                <video 
+                  id="self-intro-video" 
+                  class="responsive-video-player" 
+                  controls 
+                  preload="metadata">
+                  <source src="WhatsApp Video 2026-10-08 at 7.55.17 PM.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            <!-- Video Caption Card -->
+            <div class="video-caption-card">
+              <div class="caption-icon-wrap">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              </div>
+              <div class="caption-text">
+                <strong>Vidya R — Video Introduction:</strong> A personal and technical walkthrough covering full-stack software development, distributed architectures, database optimization, and modern web application design.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- TESTIMONIALS SECTION                                    -->
+      <!-- ======================================================= -->
+      <section class="section testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Recommendations</span>
+            <h2 id="testimonials-title" class="section-title">What Colleagues & Leaders Say</h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                "Vidya is an outstanding engineer who combines deep backend architectural acumen with an exceptional eye for refined frontend polish. Always delivers robust, tested solutions."
+              </blockquote>
+              <div class="testimonial-author-meta">
+                <span class="author-name">Alex Rivera</span>
+                <span class="author-title">VP of Engineering, Tech Innovations Corp</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-rating">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                "Vidya demonstrated incredible technical leadership on complex microservices migrations. Fast turnaround, pristine code quality, and proactive communication."
+              </blockquote>
+              <div class="testimonial-author-meta">
+                <span class="author-name">Sarah Chen</span>
+                <span class="author-title">Staff Product Manager, Dynamic Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- CHAT / INTERACTIVE ASSISTANT                            -->
+      <!-- ======================================================= -->
+      <section class="section chat-section" id="chat" aria-labelledby="chat-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Interactive Assistant</span>
+            <h2 id="chat-title" class="section-title">Ask Vidya's AI Assistant</h2>
+            <p class="section-desc">Have questions about Vidya's technical background, stack, or availability? Type a message below.</p>
+          </div>
+
+          <div class="modern-chat-wrapper">
+            <div class="chat-header">
+              <div class="chat-header-user">
+                <span class="chat-avatar-status"></span>
+                <strong>Vidya's Engineering Assistant</strong>
+              </div>
+              <span class="chat-status-text">Online</span>
+            </div>
+
+            <div class="chat-history-box" id="chat-history">
+              <div class="chat-msg bot-msg">
+                <div class="msg-bubble">
+                  Hello! I am Vidya's interactive portfolio assistant. Ask me anything about Vidya's technical stack, career experience, recent projects, or availability for full-stack and cloud engineering roles!
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-input-row">
+              <input type="text" class="modern-chat-input" placeholder="Ask a question about Vidya's skills or experience..." id="chat-user-input" />
+              <button type="button" class="btn btn-primary" id="chat-send-btn">
+                Send <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================= -->
+      <!-- CONTACT SECTION                                         -->
+      <!-- ======================================================= -->
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Get In Touch</span>
+            <h2 id="contact-title" class="section-title">Connect with Vidya R</h2>
+            <p class="section-desc">Whether you have an upcoming project, software engineering opportunity, or simply want to connect, feel free to reach out.</p>
+          </div>
+
+          <div class="contact-links-grid">
+            <a href="mailto:engineer@example.com" class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div class="contact-card-body">
+                <h3>Direct Email</h3>
+                <p>engineer@example.com</p>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-card-icon">💼</div>
+              <div class="contact-card-body">
+                <h3>LinkedIn Profile</h3>
+                <p>Connect with Vidya professionally</p>
+              </div>
+            </a>
+
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-card-icon">🐙</div>
+              <div class="contact-card-body">
+                <h3>GitHub Repositories</h3>
+                <p>Explore Vidya's code & repositories</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- FOOTER                                                    -->
+    <!-- ========================================================= -->
+    <footer class="site-footer" id="footer">
+      <div class="container footer-container">
+        <p>&copy; <span id="current-year">2026</span> Vidya R • Software Engineer. All rights reserved.</p>
+        <div class="footer-back-top">
+          <a href="#hero" class="back-top-link">
+            Back to Top <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- MODERN PROJECT DETAILS MODAL                              -->
+  <!-- ========================================================= -->
+  <dialog id="project-detail-modal" class="modern-modal" aria-labelledby="modal-project-title">
+    <div class="modal-inner">
+      <div class="modal-top-bar">
+        <div class="modal-heading-wrap">
+          <span class="modal-category" id="modal-project-category">DevOps & Cloud</span>
+          <h3 id="modal-project-title" class="modal-title">Project Title</h3>
+        </div>
+        <button id="modal-close-btn" class="modal-close-button" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-content-scroll">
+        <div class="modal-preview-box">
+          <img id="modal-project-img" src="" alt="Project Detailed Screenshot" class="modal-hero-img" />
+        </div>
+        
+        <div class="modal-info-section">
+          <h4>Architecture & Overview</h4>
+          <p id="modal-project-desc" class="modal-desc"></p>
+          
+          <h4>Technology Stack</h4>
+          <div id="modal-project-tags" class="tech-tags-group"></div>
+
+          <div class="modal-cta-row">
+            <a id="modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Launch Live Demo <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a id="modal-repo-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              View Repository <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- External JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
